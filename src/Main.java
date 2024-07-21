@@ -1,9 +1,10 @@
+import LinkedList.*;
 
 public class Main {
     public static void main(String[] args) {
 /*     //Singly linked list:
 
-        SingleLL list = new SingleLL();
+        LinkedList.SingleLL list = new LinkedList.SingleLL();
         list.insertFirst(1);
         list.insertFirst(2);
         list.insertFirst(3);

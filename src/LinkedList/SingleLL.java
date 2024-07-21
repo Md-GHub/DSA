@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class SingleLL {
     private Node head;
     private Node tail;

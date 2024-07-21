@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class DoublLL {
 
     private Node head;
