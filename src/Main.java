@@ -1,3 +1,4 @@
+import Tree.BST;
 import Tree.BT;
 
 import java.util.Scanner;
@@ -30,9 +31,24 @@ public class Main {
 
 
 
-        BT tree = new BT();
-        tree.populate(new Scanner(System.in));
-        tree.display();
+//        BT tree = new BT();
+//        tree.populate(new Scanner(System.in));
+//        tree.display();
 
+        BST tree2 = new BST();
+        tree2.insert(10);
+        tree2.insert(15);
+        tree2.insert(7);
+        tree2.insert(8);
+        tree2.insert(6);
+        tree2.insert(20);
+        tree2.insert(14);
+        tree2.insert(100);
+        tree2.insert(200);
+        tree2.insert(300);
+        tree2.insert(400);
+
+        tree2.display();
+        System.out.println(tree2.search(4000));
     }
 }
