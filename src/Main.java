@@ -1,4 +1,6 @@
-import LinkedList.*;
+import Tree.BT;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,12 +20,19 @@ public class Main {
         list.display();
  */
 
-        DoublLL list1 = new DoublLL();
-        list1.insertFirst(1);
-        list1.insertFirst(2);
-        list1.insertLast(100);
-        list1.display();
-        list1.delete(1);
-        list1.display();
+//        DoublLL list1 = new DoublLL();
+//        list1.insertFirst(1);
+//        list1.insertFirst(2);
+//        list1.insertLast(100);
+//        list1.display();
+//        list1.delete(1);
+//        list1.display();
+
+
+
+        BT tree = new BT();
+        tree.populate(new Scanner(System.in));
+        tree.display();
+
     }
 }
