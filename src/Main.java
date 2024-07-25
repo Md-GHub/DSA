@@ -1,3 +1,4 @@
+import Stack.ST;
 import Tree.AVL;
 import Tree.BST;
 import Tree.BT;
@@ -36,12 +37,29 @@ public class Main {
 //        tree.populate(new Scanner(System.in));
 //        tree.display();
 
-        AVL tree2 = new AVL();
-        for(int i=0;i<10000000;i++){
-            tree2.insert(i);
+//        AVL tree2 = new AVL();
+//        for(int i=0;i<10000000;i++){
+//            tree2.insert(i);
+//        }
+//        tree2.display();
+//        System.out.println(tree2.isBalanced());
+//        System.out.println(tree2.height());
+
+
+        ST stack = new ST();
+        for(int i=0;i<20;i++){
+            stack.push(i);
         }
-        tree2.display();
-        System.out.println(tree2.isBalanced());
-        System.out.println(tree2.height());
+        System.out.println(stack.peek());
+        System.out.println(stack.isEmpty());
+        System.out.println(stack.isFull());
+        for(int i=0;i<20;i++){
+            stack.pop();
+        }
+
+        System.out.println(stack.peek());
+        System.out.println(stack.isEmpty());
+        System.out.println(stack.isFull());
+
     }
 }
